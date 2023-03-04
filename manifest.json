@@ -1,0 +1,33 @@
+{
+    "short_name": "To-do App",
+    "name": "To-do App",
+    "icons": [
+        {
+            "src": "/img/logo/base-64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "/img/logo/base-128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/img/logo/base-256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/img/logo/base-384.png",
+            "type": "image/png",
+            "sizes": "384x384"
+        }
+    ],
+    "id": "/index.htm",
+    "start_url": "/index.htm",
+    "background_color": "#05bbff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#05bbff",
+    "description": "Your Simple To-do App"
+}

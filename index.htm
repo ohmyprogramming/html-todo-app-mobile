@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>To-Do App</title>
+        <link href="/css/base.min.css" rel="stylesheet">
+        <link href="/css/theme.min.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="/img/logo/base-128.png">
+        <link rel="manifest" href="/manifest.json">
+    </head>
+    <body>
+        <app-container>
+            <div id="header-dropoff">
+                <div class="title"></div>
+            </div>
+
+            <div class="top-box-info app-padding font-size-d">
+                <p template="1">Welcome back, {$Username}</p>
+            </div>
+
+            <div class="above-items-list app-padding font-size-b">
+                <div class="brief-info">
+                    <p class="note" template="1" template-reload="1">You have {$NumberOfTodoItems} item{$NumberOfTodoItemsNoun}{$NumberOfTodoItemsChar}</p>
+                </div>
+
+                <div class="add-item">
+                    <button run-function="addItem"></button>
+                </div>
+            </div>
+
+            <div class="items-list app-padding"></div>
+
+            <!-- default hidden -->
+            <div class="add-item-options" data-hidden="1" data-action="null">
+                <p class="font-size-d" class="heading">Add items!</p>
+                <p>Enter the details of your todo item</p>
+                <input name="title" placeholder="Example: Buy groceries">
+                <!--<textarea name="title" placeholder="Example: Buy groceries" resize="none"></textarea>-->
+                <!-- This uuid field will be used to target an existing item -->
+                <input name="uuid" style="display: none" value="">
+                <div class="buttons">
+                    <button class="action-discard"><p>Discard</p></button>
+                    <button class="action-accept"><p>Accept</p></button>
+                </button>
+            </div>
+
+            <!--
+            <div class="info-modal-chooser" data-hidden="1" template-html="1" template-reload="1">
+                <p class="font-size-d">{$InfoModalTitle}</p>
+                <p class="font-size-b">{$InfoModalDescription}</p>
+                <button class="action-no"><p>NO</p></button>
+                <button class="action-yes"><p>YES</p></button>
+            </div>
+            -->
+        </app-container>
+
+        <css-temporary>
+            <!-- Temporary <style> elements will spawn here -->
+        </css-temporary>
+
+        <script src="/js/app.min.js"></script>
+    </body>
+</html>
