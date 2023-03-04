@@ -16,15 +16,15 @@
 /* Load custom fonts */
 @font-face {
     font-family: import-monoid;
-    src: url("/font/monoid-regular.ttf") format("truetype")
+    src: url("../font/monoid-regular.ttf") format("truetype")
 }
 
 @font-face {
     font-family: import-monoid-bold;
-    src: url("/font/monoid-bold.ttf") format("truetype")
+    src: url("../font/monoid-bold.ttf") format("truetype")
 }
 
 @font-face {
     font-family: import-monoid-italic;
-    src: url("/font/monoid-italic.ttf") format("truetype")
+    src: url("../font/monoid-italic.ttf") format("truetype")
 }
